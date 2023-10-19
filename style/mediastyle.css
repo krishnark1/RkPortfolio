@@ -34,7 +34,7 @@
 
 /***** media Section for mobile(<=700px) *****/
 
-@media (width <= 700px) {
+@media (width <= 600px) {
   html{
     font-size: 50%;
   }
