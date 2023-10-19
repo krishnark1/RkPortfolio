@@ -1,0 +1,85 @@
+/***** media Section for tabs or width < 1200px *****/
+
+@media (width < 1200px){
+
+  html{
+    font-size: 54.6%;
+  }
+
+  /* layout */
+  
+
+  .grid-four--cols{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .grid-three--cols{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  /***** contact Section *****/
+
+  .contact-section .grid .contact-map{
+    display: none;
+  }
+
+  .contact-section .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /***** End contact Section *****/
+}
+
+/***** End media Section for tabs or width < 1200px *****/
+
+
+/***** media Section for mobile(<=700px) *****/
+
+@media (width <= 700px) {
+  html{
+    font-size: 50%;
+  }
+  .grid-two--cols{
+    grid-template-columns: 1fr;
+  }
+  
+  /***** navbar Section *****/
+  .header-section .container{
+    flex-direction: column;
+   }
+   .container .navbar-brand{
+     text-align: center;
+     padding-top: .5rem;
+   }
+   .container .navbar{
+    padding: 1rem;
+   }
+  /***** End navbar Section *****/
+
+  /***** hero Section *****/
+  .hero-section .container{
+    padding-top: 10rem;
+  }
+  .hero-section .grid .hero-content{
+    order: 2;
+  }
+
+  .hero-section .grid .btn-bg--transparent{
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+  .hero-section .grid .hero-image{
+    order: 1;
+  }
+  
+  /***** End hero Section *****/
+
+  /***** about Section *****/
+
+  .about-section .grid .about-content .about-info p{
+    padding: 3rem
+  }
+  
+  /***** End about Section *****/
+  
+}
+/***** End media Section for mobile(<=700px) *****/
