@@ -214,6 +214,30 @@ li {
   -o-border-radius: 1rem;
 }
 
+.about-content .about-education{
+  animation: zoomeffect .5s linear;
+  -webkit-animation: zoomeffect .5s linear;
+}
+
+.about-content .about-experience{
+  animation: zoomeffect 1.3s linear;
+  -webkit-animation: zoomeffect .5s linear;
+  animation-delay: .3s;
+}
+@keyframes zoomeffect {
+  0%{
+    scale: 1;
+  }
+  50%{
+    scale: 1.2;
+  }
+
+  100%{
+    scale: 1;
+  }
+}
+
+
 /***** End about Section *****/
 
 /***** skills Section *****/
