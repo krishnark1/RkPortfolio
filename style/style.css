@@ -177,6 +177,8 @@ li {
 }
 
 .hero-section .grid .hero-image figure img{
+  width: 40rem;
+  height: auto;
   border-radius: 50rem;
   /*transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -207,6 +209,8 @@ li {
 }
 
 .about-section .grid .about-image figure img{
+  width: 40rem;
+  height: auto;
   border-radius: 5rem;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
