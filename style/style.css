@@ -5,16 +5,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
+  /* 1rem = 10px */
+  scroll-behavior: smooth; 
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-size: 2rem;
   font-family: 'Urbanist', sans-serif;
 }
 
@@ -22,7 +22,7 @@ p,
 a,
 li,
 label {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
@@ -50,9 +50,9 @@ li {
 /* layout */
 
 .container {
-  max-width: 120rem;
+  max-width: 140rem;
   margin: 0 auto;
-  padding: 7rem 3.5rem 2rem;
+  padding: 5.6rem  3.4rem;
 }
 
 .grid{
@@ -369,6 +369,7 @@ footer .container{
 /***** End footer Section *****/
 
 /***** scroll bar Section *****/
+/* width */
 ::-webkit-scrollbar {
   width: 1rem;
 }
