@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Urbanist:wght@400;500;600&display=swap');
 /* base rule  */
 
 * {
@@ -68,9 +67,6 @@ li {
   grid-template-columns:repeat(3, 1fr);
 }
 
-.grid-four--cols{
-  grid-template-columns: repeat(4, 1fr);
-}
 /* module / reusable  */
 
 .btn{
@@ -156,7 +152,9 @@ li {
 }
 
 .hero-section .grid{
+  padding: 8rem 3rem;
   align-items: center;
+  justify-items: center;
   gap: 6.5rem;
   height: auto;
 }
@@ -178,6 +176,22 @@ li {
   padding: .5rem 0 2rem 0;
 }
 
+.hero-section .grid .hero-image figure img{
+  width: 40rem;
+  height: auto;
+  border-radius: 50rem;
+  /*transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  */-webkit-border-radius: 5rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+  -webkit-border-radius: 50rem;
+}
+
 /***** End main hero Section *****/
 
 /***** about Section *****/
@@ -191,6 +205,17 @@ li {
   padding: 2rem 3rem 4rem;
   gap: 3rem;
   align-items: center;
+  justify-items: center;
+}
+
+.about-section .grid .about-image figure img{
+  width: 40rem;
+  height: auto;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
 }
 
 .about-section .grid .about-content p{
@@ -214,28 +239,6 @@ li {
   -o-border-radius: 1rem;
 }
 
-.about-content .about-education{
-  animation: zoomeffect .5s linear;
-  -webkit-animation: zoomeffect .5s linear;
-}
-
-.about-content .about-experience{
-  animation: zoomeffect 1.3s linear;
-  -webkit-animation: zoomeffect .5s linear;
-  animation-delay: .3s;
-}
-@keyframes zoomeffect {
-  0%{
-    scale: 1;
-  }
-  50%{
-    scale: 1.2;
-  }
-
-  100%{
-    scale: 1;
-  }
-}
 
 
 /***** End about Section *****/
@@ -251,6 +254,7 @@ li {
 .skills-section .grid{
   gap: 3rem;
   padding: 2rem 4rem;
+  justify-items: center;
 }
 .skills-section .grid .skill-div{
   display: flex;
@@ -282,7 +286,7 @@ li {
 }
 
 .skills-section .grid .skill-div .icon{
-  font-size: 3rem;
+  font-size: 5rem;
   color: orangered;
   width: 5rem;
   aspect-ratio: 1;
@@ -302,7 +306,7 @@ li {
 }
 
 .skills-section .grid .skill-div .skill-description{
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   letter-spacing: .1rem;
   padding: 1rem .5rem;
